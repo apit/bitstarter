@@ -3,69 +3,69 @@
   <head>
     <meta charset="utf-8">
     <title>My First Bitstarter</title>
-    <link type="text/css" rel="stylesheet" 
-          href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+  
     <style type="text/css">
+    body { padding-bottom: 40px; }
+    @media(min-width: 980px) {
       body {
-        padding-top: 20px;
-        padding-bottom: 40px;
+        padding-top: 60px;
       }
-      .container {
-        width: 960px;
-      }
-      p.lead {
-        padding-top: 15px;
-      }
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
-        padding: 10px 0px 10px 0px;
-      }
+    }
+      
+
       .video, .thermometer, .order, .social {
         border: 1px dotted;
         text-align: center;
       }
-      .video {
-        /* Internal borders have 1px width, thus need to add 4 x 1px to 120px. */
-        height: 124px;
-        line-height: 124px;
-      }
-      .thermometer, .order, .social {
-        /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
-        height: 40px;
-        line-height: 40px;
-      }
-      div.row {
-        border: 1px solid;
-      }
+
+      
     </style>
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    <![endif]-->
+
   </head>
   <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Bitstarter</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
     <div class="container">
-      <div class="row navigation">
-        <div class="span2 logo">
-          Logo
-        </div>
-        <div class="span6 blank">
-          Blank
-        </div>
-        <div class="span4 about">
-          About
+      <div class="row-fluid heading">
+        <div class="span12">
+          <h1>Ini Dia Si Jali-jali</h1>
+          <p class="subheading">Lagunya enak, lagunya enak merdu sekaleee</p>
         </div>
       </div>
-      <div class="row heading">
-        <div class="span12">
-          <h1>Bitstarter Title</h1>
+
+
+      <div class="row-fluid pitch">
+        <div class="span5 offset1 video">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
         </div>
-      </div> 
-     <div class="row subheading">
-        <div class="span12">
-          <p class="lead">This is my first bitstarter project.</p>
-        </div>
-      </div>
-      <div class="row pitch">
-        <div class="span6 video">
-          Video
-        </div>
-        <div class="span6">
+
+        <div class="span6 actions">
           <div class="thermometer">
             Thermometer
           </div>
@@ -77,7 +77,8 @@
           </div>
         </div>
       </div>
-      <div class="row section1">
+
+      <div class="row-fluid section1">
         <div class="span12">
           Marketing Section 1
         </div>
@@ -98,5 +99,7 @@
         </div>
       </div>
     </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
   </body>
 </html>
